@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CombinacionesRecursivas {
     
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner Scanner = new Scanner(System.in);
         
         System.out.println("Introduce el valor de n (conjunto): ");
         
-        int n = scanner.nextInt();
+        int n = Scanner.nextInt();
         
         System.out.println("Introduce el valor de k (subconjunto): ");
         
-        int k = scanner.nextInt();
+        int k = Scanner.nextInt();
         
         CombinacionesRecursivas combinacionesRecursivas = new CombinacionesRecursivas();
         combinacionesRecursivas.combinaciones(n, k);
