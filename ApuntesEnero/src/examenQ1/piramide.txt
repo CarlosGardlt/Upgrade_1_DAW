@@ -14,4 +14,4 @@ Conocimiento:
 Sabiduría:
     * Sé que no debemos dividir entre 0 y esto nos recuerda que cuando le pida datos numéricos al usuario
     debo asegurarme de que dichos datos puedan operar en mi programa sin problema alguno, por ejemplo, me-
-    diante el uso de condicionales como hemos hecho anteriormente.
+    diante el uso de condicionales como hemos hecho anteriormente. 
