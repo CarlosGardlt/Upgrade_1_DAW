@@ -1,6 +1,9 @@
 package Entregas;
 
     /*
+    * @autor: Carlos Garcia
+    * @version: 1.0
+    *
     * Clase Fraccion
     * Representa una fraccion matematica.
     */
