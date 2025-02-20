@@ -1,6 +1,5 @@
 public class Webcam {
 
-    
         private String resolucion;
         private int fps;
         private boolean encendida;
@@ -35,8 +34,6 @@ public class Webcam {
                 System.out.println("Foto tomada con una resolución de "+ resolucion +  "y un tamaño de archivo de " + tamanioArchivo);
             } else {
                 System.out.println("La cámara no está encendida");
-
-    
             }
         }
 
@@ -71,7 +68,4 @@ public class Webcam {
         public void setTamanioArchivo(double tamanioArchivo) {
             this.tamanioArchivo = tamanioArchivo;
         }
-    
-
-
 }
