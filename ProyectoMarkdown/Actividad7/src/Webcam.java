@@ -1,73 +1,77 @@
 public class Webcam {
-    private String resolucion;
-    private int fps;
-    private boolean esEncendido;
-    private double tamanioArchivo;
 
-    public Webcam(String resolucion, int fps) {
-        this.resolucion = resolucion;
-        this.fps = fps;
-        esEncendido = false;
-    }
+    
+        private String resolucion;
+        private int fps;
+        private boolean encendida;
+        private double tamanioArchivo;
 
-    public void encender() {
-        System.out.println("Has encendido la webcam");
-        esEncendido = true;
-    }
-
-    public void apagar() {
-        System.out.println("Has apagado la webcam");
-        esEncendido = false;
-    }
-
-
-    public void tomarFoto() {
-        if (esEncendido) {
-            var alto = 0;
-            var ancho = 0;
-            try {
-                alto = Integer.parseInt(resolucion.substring(0, resolucion.indexOf("x")));
-                ancho = Integer.parseInt(resolucion.substring(resolucion.indexOf("x") + 1));
-            } catch (StringIndexOutOfBoundsException | NumberFormatException e) {
-                System.out.println("Error al tomar foto, la resolucion no es correcta");
-                return;
-            }
-            tamanioArchivo = (ancho * alto * fps) / 1000000.0;
-            System.out.println("Tomando foto con la resolucion " + resolucion + " y el tamaño estimado es " + tamanioArchivo);
-        } else {
-            System.out.println("Debes encender la webcam antes de tomar una foto");
+        public Webcam(String resolucion, int fps, boolean encendida, double tamanioArchivo) {
+            this.resolucion = resolucion;
+            this.fps = fps;
+            this.encendida = encendida;
+            this.tamanioArchivo = tamanioArchivo;
         }
-    }
 
-    public String getResolucion() {
-        return resolucion;
-    }
+        public void encender() {
+            encendida = true;
+        }
 
-    public void setResolucion(String resolucion) {
-        this.resolucion = resolucion;
-    }
+        public void apagar() {
+            encendida = false;
+        }
 
-    public int getFps() {
-        return fps;
-    }
+        public void tomarFoto() {
+            if (encendida) {
+                var alto = 0;
+                var ancho = 0;   
+                try {
+                    alto = Integer.parseInt(resolucion.split("x")[0]);
+                    ancho = Integer.parseInt(resolucion.split("x")[1]);
+                } catch (Exception e) {
+                    System.out.println("Error al obtener la resolución de la cámara");
+                }
+                tamanioArchivo = (ancho * alto * fps) / 1000000.0;
+                System.out.println("Foto tomada con una resolución de "+ resolucion +  "y un tamaño de archivo de " + tamanioArchivo);
+            } else {
+                System.out.println("La cámara no está encendida");
 
-    public void setFps(int fps) {
-        this.fps = fps;
-    }
+    
+            }
+        }
 
-    public boolean isEsEncendido() {
-        return esEncendido;
-    }
+        public String getResolucion() {
+            return resolucion;
+        }
 
-    public void setEsEncendido(boolean esEncendido) {
-        this.esEncendido = esEncendido;
-    }
+        public void setResolucion(String resolucion) {
+            this.resolucion = resolucion;
+        }
 
-    public double isTamanioArchivo() {
-        return tamanioArchivo;
-    }
+        public int getFps() {
+            return fps;
+        }
 
-    public void setTamanioArchivo(double tamanioArchivo) {
-        this.tamanioArchivo = tamanioArchivo;
-    }
+        public void setFps(int fps) {
+            this.fps = fps;
+        }
+
+        public boolean isEncendida() {
+            return encendida;
+        }
+
+        public void setEncendida (boolean encendida) {
+            this.encendida = encendida;
+        }
+
+        public double getTamanioArchivo() {
+            return tamanioArchivo;
+        }
+
+        public void setTamanioArchivo(double tamanioArchivo) {
+            this.tamanioArchivo = tamanioArchivo;
+        }
+    
+
+
 }
