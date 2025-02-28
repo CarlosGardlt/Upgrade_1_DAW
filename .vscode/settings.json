@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "ProyectoMarkdown/Actividad7/src",
-        "ProyectoMarkdown"
+        "ProyectoMarkdown",
+        "Programacion/src/sesion20250219"
     ]
 }
