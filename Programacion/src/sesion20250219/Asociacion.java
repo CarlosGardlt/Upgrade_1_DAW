@@ -1,4 +1,4 @@
-package sesion20250219;
+
 
 class Autor{
     private String nombre;

@@ -1,4 +1,4 @@
-package sesion20250219;
+
 
 
 abstract class Empleado{
@@ -82,5 +82,6 @@ public class Abstractos {
         juan.resumen();
         pedro.resumen();
         pedro.tiempoDeEmpleo();
+        System.out.println(pedro instanceof Empleado);
     }
 }

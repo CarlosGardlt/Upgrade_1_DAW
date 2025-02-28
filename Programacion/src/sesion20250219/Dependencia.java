@@ -1,5 +1,3 @@
-package sesion20250219;
-
 
 class Pedido {
     private int numero;
