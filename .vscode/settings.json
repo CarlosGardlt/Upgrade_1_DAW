@@ -3,5 +3,6 @@
         "ProyectoMarkdown/Actividad7/src",
         "ProyectoMarkdown",
         "Programacion/src/sesion20250219"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
