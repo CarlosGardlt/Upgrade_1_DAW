@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "ProyectoMarkdown/Actividad7/src",
         "ProyectoMarkdown",
-        "Programacion/src/sesion20250219"
+        "Programacion/src/sesion20250219",
+        "Programacion/src/sesion20250402"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
