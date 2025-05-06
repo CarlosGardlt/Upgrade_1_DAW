@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class BuscadorPalabras {
     public static void main(String[] args) {
         // Creamos un objeto scanner para leer de teclado (System.in)
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
         System.out.println("Introduce la palabra a buscar: ");
-        String palabraBuscada = sc.nextLine();
+        String palabraBuscada = scanner.nextLine();
 
         String rutaFichero = "PRG\\20250423\\palabrasParaBuscar.txt";
 
@@ -34,6 +34,6 @@ public class BuscadorPalabras {
         } catch (FileNotFoundException excepcion) {
             System.err.println("No se encontró el fichero: " + excepcion.getMessage());
         }
-        sc.close();
+        scanner.close();
     }
 }

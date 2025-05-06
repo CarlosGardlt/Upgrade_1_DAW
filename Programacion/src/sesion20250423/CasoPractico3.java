@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class CasoPractico3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Dime un número:");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         String fichero = "PRG\\20250423\\casoPractico_3.txt";
 

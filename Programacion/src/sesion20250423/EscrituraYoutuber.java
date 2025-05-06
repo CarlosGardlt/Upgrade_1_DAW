@@ -10,10 +10,10 @@ public class EscrituraYoutuber {
 
         try {
             // Se crea un flujo para escribir bytes en el archivo
-            FileOutputStream fs = new FileOutputStream("PRG\\20250423\\youtubers.txt");
+            FileOutputStream fos = new FileOutputStream("PRG\\20250423\\youtubers.txt");
 
             // Se crea un flujo para escribir objetos en el archivo
-            ObjectOutputStream oos = new ObjectOutputStream(fs);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
 
             // Se recorren los arrays para crear objetos Youtuber y escribirlos
             for (int i = 0; i < 4; i++) {
@@ -24,7 +24,7 @@ public class EscrituraYoutuber {
             // Se cierran los flujos de salida si no son null
             if (oos != null) {
                 oos.close();
-                fs.close();
+                fos.close();
             }
         } catch (IOException e) {
             e.printStackTrace(); // Muestra errores de entrada/salida si ocurren
