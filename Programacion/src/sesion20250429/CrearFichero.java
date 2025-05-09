@@ -1,6 +1,8 @@
 import java.io.File;
 import java.io.IOException;
 
+package sesion20250429;
+
 public class CrearFichero {
     public static void main(String[] args) {
         // Crear un objeto File que representa un fichero llamado "fichero.txt"
