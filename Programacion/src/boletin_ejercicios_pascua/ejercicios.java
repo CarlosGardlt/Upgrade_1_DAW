@@ -3,14 +3,16 @@ package boletin_ejercicios_pascua;
 import java.util.Scanner;
 
 public class ejercicios {
-    public static void main(String[] args) {
-    
-    Scanner scanner = new Scanner(System.in);
-    int[] numeros = {13, 4, 8, 9, 11};
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            double[] notas = new double[10];
+            double suma = 0;
 
-    int min = numeros[0];
-    int max = numeros[0];
-    
-    
-    }
+            for (int i = 0; i < notas.length; i++) {
+            System.out.print("Introduce la nota del alumno " + (i + 1) + ": ");
+            notas[i] = scanner.nextDouble();
+            suma += notas[i]; // Sumar la nota al total
+        }
+}
+
 }
