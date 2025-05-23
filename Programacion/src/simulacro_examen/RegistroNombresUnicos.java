@@ -33,4 +33,4 @@ public class RegistroNombresUnicos {
         scan.close(); // Cerramos el scanner para liberar recursos de memoria
 
     }
-}
+} 
